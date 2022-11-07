@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise JS 3</title>
+
+    <style>
+        input {
+            outline: none;
+        }
+    </style>
+</head>
+<body>
+    <h2>Bài 1: Tính trung bình 3 môn và tổng 3 môn</h2>
+    <p>Điểm Lý:</p><input id="Physical" type="text">
+    <br>
+    <p>Điểm Hoá:</p><input id="Chemistry" type="text">
+    <br>
+    <p>Điểm Sinh:</p><input id="Born" type="text">
+    <br>
+    <p>Điểm trung bình:</p><input id="medium" type="text">
+    <br>
+    <p>Tổng điểm 3 môn:</p><input id="totalScore" type="text">
+    <br>
+    <input type="button" value="Tính tổng" style="margin-top: 8px;" onclick="total()">
+
+    <h2>Bài 2: Chuyển đổi độ C sang độ F</h2>
+    <p>độ C (Celsius)</p>
+    <input type="text" id="celsius">
+    <input type="button" value="Chuyển đổi" onclick="convert()" style="margin-top: 8px;">
+    <p>độ F (Fahrenheit)</p>
+    <input type="text" id="fahrenheit">
+
+    <h2>Bài 3: Tính diện tích hình tròn</h2>
+    <p>Nhập bán kính hình tròn (R):</p>
+    <input type="text" id="radius">
+    <input type="button" value="Kết quả" onclick="area()">
+    <br>
+    <span style="margin-top: 8px; display: inline-block;">
+        Diện tích hình tròn là:
+        <span id="areaSpan"></span>
+    </span>
+    <br>
+    <span style="margin-top: 8px; display: inline-block;">
+        Chu vi hình tròn là:
+        <span id="perimeterSpan"></span>
+    </span>
+    
+</body>
+<script src="main.js"></script>
+</html>
