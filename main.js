@@ -3,10 +3,10 @@ function total() {
     var physicalScore = document.getElementById('Physical');
     var chemistryScore = document.getElementById('Chemistry');
     var bornScore = document.getElementById('Born');
-    var mediumScore = document.getElementById('medium');
-    mediumScore.value = (parseInt(physicalScore.value) + parseInt(chemistryScore.value) + parseInt(bornScore.value))/3
     var results = document.getElementById('totalScore');
     results.value = parseInt(physicalScore.value) + parseInt(chemistryScore.value) + parseInt(bornScore.value)
+    var mediumScore = document.getElementById('medium');
+    mediumScore.value = parseInt(results.value)/3
 }
 
 // BÀI 2
